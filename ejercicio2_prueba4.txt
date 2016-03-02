@@ -19,7 +19,7 @@ for x in perro["animales"]["animal"]:
 
 			print raza_def
 
-fichero_perros.close()
+
 #2. ¿Cuantos perros grandes hay?
 
 grande = len(perro["animales"]["animal"])
@@ -36,11 +36,7 @@ for x in perro["animales"]["animal"]:
 	tam = x["tamanyo"].lower()
 	if raza == cadena or tam == cadena:
 		print "raza:",x["descripcion"],"tamaño:",x["tamanyo"]
-		print len("tamanyo")
-
-	
 
 	
 			
-
 
