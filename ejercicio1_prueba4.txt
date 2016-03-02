@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import json
+from pprint import pprint
+
+#1. Lista las distintas razas que hay.
+
+
+fichero_perros = open('/home/usuario/Documentos/perros.json','r')
+perro = json.load(fichero_perros)
+
+for x in perro["animales"]["animal"]:
+	raza = x["descripcion"]
+	raza_def = ()
+	for tipos in raza_def:
+		while raza != tipos: 
+			raza.append(raza_def)
+
+
+print raza
+
+
+
+
+
+
+
+
+
+
