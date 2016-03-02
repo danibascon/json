@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import json
+
+#1. Lista las distintas razas que hay.
+
+
+fichero_perros = open('/home/dani/Documentos/perros.json','r')
+perro = json.load(fichero_perros)
+
+raza = perro(["animales"]["animal"]["descripcion"])
+
+print raza
+
+
+
+
+#2. ¿Cuatos perros grandes hay?
+contador_perros_grandes=0
+perros_grandres = perro(["animales"]["animal"]["tamanyo"])
+if perros_grandres == Grande:
+	contador_perros_grandes = contador_perros_grandes + 1
+
+
+print contador_perros_grandes
