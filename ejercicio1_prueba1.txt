@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import json
+
+#1. Lista las distintas razas que hay.
+
+
+fichero_perros = open('/home/dani/Documentos/perros.json','r')
+perro = json.load(fichero_perros)
+
+raza = perro(["animales"]["animal"]["descripcion"])
+
+print raza
+
+
+

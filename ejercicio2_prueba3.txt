@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import json
+from pprint import pprint
+
+#1. Lista las distintas razas que hay.
+
+
+fichero_perros = open('/home/usuario/Documentos/perros.json','r')
+perro = json.load(fichero_perros)
+raza_def = ()
+
+for x in perro["animales"]["animal"]:
+	raza = x["descripcion"]
+	for tipos in raza_def:
+		while tipos != raza: 
+			raza_def.append(raza)
+
+			print raza_def
+
+
+#2. ¿Cuantos perros grandes hay?
+
+grande = len('"tamnanyo" : "Grande"')
+print "Hay un total de",grande,"perros grandes"
+
